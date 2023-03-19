@@ -4,10 +4,15 @@
 
 from setuptools import setup
 
+from pathlib import Path
+this_directory = Path(__file__).parent
+long_description = (this_directory / "README.md").read_text()
+
 setup(name='makemake',
       version='0.1',
       description='A simple makefile generator for C projects',
-      long_description='Creates a makefile from a source folder and a Makefile.in file',
+      long_description=long_description,
+      long_description_content_type='text/markdown',
       classifiers=[
           'Development Status :: 4 - Beta',
           'Intended Audience :: Developers',
