@@ -1,0 +1,4 @@
+PROG=prog
+DIR=src/
+STD=c99
+BUILD=build/

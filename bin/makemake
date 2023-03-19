@@ -1,0 +1,17 @@
+#!/usr/bin/env python3
+
+# makemake - a simple Makefile generator
+# (c) 2023 by Andreas Schwenk <contact@compiler-construction.com>
+# License: GPLv3
+
+from sys import argv
+import makemake
+
+if len(argv) != 2:
+    print('usage: python3 makemake.py INPUT')
+    exit(-1)
+
+input_path = argv[1]
+output_path = input_path[:-3]
+
+print('running makemake on path ' + input_path)
