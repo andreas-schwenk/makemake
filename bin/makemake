@@ -15,3 +15,4 @@ input_path = argv[1]
 output_path = input_path[:-3]
 
 print('running makemake on path ' + input_path)
+makemake.makemake(input_path, output_path)

@@ -9,7 +9,7 @@ this_directory = Path(__file__).parent
 long_description = (this_directory / "README.md").read_text()
 
 setup(name='makemake',
-      version='0.1',
+      version='0.2',
       description='A simple makefile generator for C projects',
       long_description=long_description,
       long_description_content_type='text/markdown',
